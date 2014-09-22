@@ -1,0 +1,81 @@
+﻿body {
+	background: black
+}
+
+
+.div-main-page {
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	background: black;
+    background-image: url('images/anglogo.jpg');
+  	background-repeat: no-repeat;
+ 	background-attachment: fixed;
+    background-position: center; 
+	
+	color: rgb( 200, 200, 255);
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+
+
+	
+}
+.div-setting {
+	width: 50px;
+	height: 100%;
+	float: right;
+	background: rgb( 0, 0, 60);
+	border-left: thin;
+	border-left-color: rgb( 200, 200, 255);
+	border-left-style: solid;
+}
+.div-settings-full {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgb( 0, 0, 60);
+	border-left: thin;
+	border-left-color: rgb( 200, 200, 255);
+	border-left-style: solid;
+	
+}
+
+
+.header_ribbon {
+	background: blue;
+	color: rgb( 200, 200, 255);
+	font-family: serif;
+	height: 36px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.img-setting {
+	position: relative;
+	float:left;
+	top: 0px;
+	left: 5px;
+	height: 36px;
+	width: 36px;
+	padding-right: 10px;
+	
+}
+
+
+
+.container {
+    width:100%;
+    height:100%;
+    border:1px solid;
+}
+.left {
+    width:auto;
+    height:200px;
+    background:red;
+    overflow:hidden;
+}
+.right {
+    height:200px;
+    width:200px;
+    background:blue;
+    float:right;
+}
