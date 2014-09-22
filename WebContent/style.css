@@ -42,12 +42,24 @@
 
 
 .header_ribbon {
-	background: blue;
 	color: rgb( 200, 200, 255);
 	font-family: serif;
 	height: 36px;
+	overflow: hidden;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
+	float: left;
+}
+.blue-ribbon {
+	background: blue;
+	width: 100%;
+	height: 36px;
+	border-bottom: thin;
+	border-bottom-color: rgb( 0, 255, 255);
+	border-bottom-style: solid;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+
 }
 .img-setting {
 	position: relative;
@@ -59,7 +71,17 @@
 	padding-right: 10px;
 	
 }
-
+.img-logoff {
+	position: relative;
+	background: blue;
+	float: right;
+	text-align: right;
+	top: 0px;
+	height: 36px;
+	width: 36px;
+	padding-right: 10px;
+	
+}
 
 
 .container {
@@ -78,4 +100,35 @@
     width:200px;
     background:blue;
     float:right;
+}
+
+.input-item-label {
+	color: white;
+	font-size: 18;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: right;
+}
+
+.input-item {
+	font-size: 18;
+	font-weight: normal;
+	font-family: sans-serif;
+	text-align: right;
+	
+	text-align:justify;
+	width: 100%;
+	border:outset 3px #ffffff;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright:5px;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }

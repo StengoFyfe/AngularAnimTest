@@ -1,0 +1,36 @@
+﻿<div>
+	  <div  ng-controller="MasterController">
+		<img class="img-setting" src="images/back.jpg" ng-click="masterContext.onSweep(-1);masterContext.showLogin(false);">
+		
+		<h1 class="header_ribbon" >ANMELDUNG</h1> 
+	</div>  
+	<div style="height: 40px" />
+<form ng-controller="LoginController">
+	<table  style="align: center; width: 100%;  vertical-align: middle">
+
+    	<tr > <td> &nbsp; </td></tr>
+		<tr >
+				<td style="width: 10%" ></td>
+				<td style="width: 40%; text-align: left" >
+					<span class="input-item-label"> BENUTZER </span> 	
+				</td>
+				<td style="width: 40%; text-align: left" >
+					<input  type="text" class="input-item" ng-model="LoginInfo.user"> 
+				</td>
+				<td style="width: 10%"></td>
+		</tr>	    	
+		<tr >
+				<td style="width: 10%" ></td>
+				<td style="width: 40%; text-align: left" >
+					<span class="input-item-label"> PASSWORT </span> 	
+				</td>
+				<td style="width: 40%; text-align: left" >
+					<input  type="password" class="input-item" ng-model="LoginInfo.pwd"> 
+				</td>
+				<td style="width: 10%"></td>
+		</tr>		
+				
+	</table>
+</form>
+</div>
+

@@ -3,6 +3,7 @@
    // Central Singleton for controlling the UI 
  app.factory('MasterContext', function($rootScope, $location, $translate) {
 	  var settingShown = false;
+	  var loginShown = false;
 	  
 		  return {
 		  MasterContext : function() {
@@ -10,6 +11,21 @@
 		  },
 		  isSettingShown : function() {
 			  return settingShown;  
+		  },
+		  showLogin : function( show ) {
+			  this.loginShown = show; 
+
+			  if( show ) {
+				  this.onSweep(-2);
+				  $location.path("/login");
+			  }
+				  
+			  else {
+				  this.onSweep(-3);
+				  $location.path("/home");
+			  }
+			  
+			  
 		  },
 		  setSettingShown : function( shown ) {
 			  settingShown = shown;
@@ -37,7 +53,12 @@
 			case -1:
 				sweepAnimation = 'view-animate-r';
 				break;
-				
+			case -2:
+				sweepAnimation = 'pop';
+				break;
+			case -3:
+				sweepAnimation = 'snagout';
+				break;
 			default:
 				sweepAnimation = null;
 				break;

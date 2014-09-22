@@ -40,4 +40,15 @@ app.controller('MasterController', function($scope, MasterContext ){
 		  };
 
   } );
+app.controller('LoginController', function($scope ){
+
+    $scope.LoginInfo = function() {
+    	return {
+    		user : "",
+    		pwd  : ""
+    		
+    	};
+    };
+
+ } );
 
